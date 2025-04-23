@@ -16,3 +16,4 @@ public class RandomStringChooser
       return(words.remove((int)(Math.random()*words.size())));
     return("NONE");
   }
+}
