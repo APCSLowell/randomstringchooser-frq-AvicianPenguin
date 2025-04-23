@@ -2,11 +2,13 @@ import java.util.*;
 public class RandomStringChooser
 {
   private List <String> wordArray;
-  public RandomStringChooser(String[] arr)
+  public RandomStringChooser(String [] arr)
   {
     wordArray = new ArrayList <String>();
     for(String word : arr)
-      wordArray.add(word);
+      {
+        wordArray.add(word);
+      }
   }
   public String getNext()
   {
@@ -14,7 +16,7 @@ public class RandomStringChooser
       return ("NONE");
     else
     {
-      int value = (int)(Math.random()*(wordArray.length));
+      int value = (int)(Math.random()*(wordArray.size()));
       return(wordArray.remove(value));
     }
   }
