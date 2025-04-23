@@ -11,7 +11,7 @@ public class RandomStringChooser
   }
   public String getNext(){
     if(wordArray.length<1)
-      return ("NONE")
+      return ("NONE");
     int randomIndex = (int)(Math.random()*(wordArray.length));
     String value = wordArray[randomIndex];
     String [] newWordArray = new String [wordArray.length-1];
