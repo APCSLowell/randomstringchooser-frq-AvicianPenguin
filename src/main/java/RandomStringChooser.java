@@ -1,11 +1,11 @@
 import java.util.*;
 public class RandomStringChooser
 {
-  private List <String> wordArray;
+  private arrayList <String> wordArray;
   public RandomStringChooser(String[] arr)
   {
     wordArray = new <String>();
-    for(word:arr)
+    for(String word : arr)
       wordArray.add(word);
   }
   public String getNext()
