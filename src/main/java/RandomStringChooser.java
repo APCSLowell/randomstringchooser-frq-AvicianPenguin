@@ -1,23 +1,18 @@
 import java.util.*;
 public class RandomStringChooser
 {
-  private List <String> wordArray;
-  public RandomStringChooser(String [] arr)
+  private List <String> words;
+  public RandomStringChooser(String[] wordArray)
   {
-    wordArray = new ArrayList <String>();
-    for(String word : arr)
+    words = new ArrayList <String>();
+    for(String word : wordArray)
       {
-        wordArray.add(word);
+        words.add(word);
       }
   }
   public String getNext()
   {
-    if(wordArray.size()<1)
-      return ("NONE");
-    else
-    {
-      int value = (int)(Math.random()*(wordArray.size()));
-      return(wordArray.remove(value));
-    }
+    if(wordArray.size()>0)
+      return(wordArray.remove((int)(Math.random()*words.size()));
+    return("NONE");
   }
-}
