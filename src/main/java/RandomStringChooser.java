@@ -12,7 +12,7 @@ public class RandomStringChooser
   }
   public String getNext()
   {
-    if(wordArray.size()>0)
-      return(wordArray.remove((int)(Math.random()*words.size()));
+    if(words.size()>0)
+      return(words.remove((int)(Math.random()*words.size())));
     return("NONE");
   }
